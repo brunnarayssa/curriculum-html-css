@@ -30,12 +30,18 @@ body {
     display: flex;
     gap: 20px;
     margin-top: 20px;
+    align-items: center; /* Alinea los elementos de manera correcta */
 }
 
+
+
 .perfil-info img {
-    width: 250px;
+    width: 250px !important;
+    height: 250px !important;
     border-radius: 50%;
+    object-fit: cover;
 }
+
 
 .perfil-info ul {
     list-style: none;
@@ -89,4 +95,22 @@ body {
 .estadistica p:first-child {
     font-size: 1.5em;
     font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .perfil-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perfil-info img {
+        width: 150px !important;  /* Asegúrate de que sea más pequeño si lo necesitas */
+        height: 150px !important;
+    }
+
+    .estadisticas {
+        flex-direction: column;
+        align-items: center;
+    }
 }
