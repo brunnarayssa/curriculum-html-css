@@ -1,0 +1,18 @@
+{
+  "name": "curriculum-html-css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "comment": "npm install http-server --save-dev - - - ",
+  "scripts": {
+  "start": "http-server ./"
+}
+,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
+
